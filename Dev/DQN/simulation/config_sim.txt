@@ -1,0 +1,23 @@
+# IP
+ip="10.100.102.5"
+port=6000
+
+# SIM MODEL
+path="D:\DQNCar\User\best performed\model_12900 30eps.h5"
+
+# INPUT SHAPE
+img_width=320
+img_height=180
+n_channels=1
+show_preprocess=1
+
+# HYPERPARAMETERS
+max_episodes=15000
+max_steps=100
+
+# ANALYZE
+draw_image=1
+arena_w=30
+arena_h=30
+img_w=600
+img_h=600

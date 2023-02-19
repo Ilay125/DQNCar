@@ -1,0 +1,36 @@
+# IP
+ip="10.100.102.5"
+port=3000
+
+# BACKUP
+path=""
+start_episode=-1
+
+# INPUT SHAPE
+img_width=320
+img_height=180
+n_channels=1
+n_outputs=4
+model_loss="huber_loss"
+
+# HYPERPARAMETERS
+replay_buffer_size=1000
+training_batch_size=64
+training_start=512
+max_episodes=15000
+max_steps=50
+target_network_replace_frequency_steps=20
+model_backup_frequency_episodes=50
+starting_epsilon=1.0f
+minimum_epsilon=0.01f
+epsilon_decay_factor_per_episode=0.995f
+discount_factor=0.99f
+train_every_x_steps=5
+learning_rate=0.0001f
+
+# REWARD
+target=100
+wall=-70
+dist_mult=25
+ang_dist_mult=0.5f
+ang_dist_offset=30
